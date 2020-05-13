@@ -14,8 +14,8 @@
 
 <body>
     <div class="gt-background">
-        <div class="display-center-middle fixed">
-            <div class="">
+        <div class="display-center">
+            <div class="display-middle">
                 <h1 class="gt-text"> Github Timeline </h1>
                 <input class="gt-transparent gt-input" id="input-username" type="text" placeholder="username">
                 <div class="gt-text-container" id="gt-response-text"></div>
@@ -23,14 +23,16 @@
             <div class="">
                 <div class="gt-table-wrapper" id="user-table-wrapper">
                     <table class="gt-table" id="user-table">
-                        <tr class="border_bottom" id="user-table-header">
-                            <th class="gt-table-left"> Field </th>
-                            <th class="gt-table-right"> Value </th>
-                        </tr>
-                        <tr class="border-bottom">
-                            <td> abcd </td>
-                            <td> qwer </td>
-                        </tr>
+                        <thead id="user-table-head">
+                            <tr class="border_bottom" id="user-table-header">
+                                <th class="gt-table-left"> Field </th>
+                                <th class="gt-table-right"> Value </th>
+                            </tr>
+                        </thead>
+                        <tbody id="user-table-body"> 
+
+                        </tbody>
+
                     </table>
                 </div>
             </div>

@@ -11,31 +11,40 @@ html {
 body {
     height: 100%;
     width: auto;
-    margin: 0 auto; 
-    border: none; 
+    margin: 0 auto;
+    border: none;
     padding: 0;
 }
 
 th {
     padding: 5px;
-    border-bottom: 1px solid azure;
+    border-bottom: 1px solid rgba(240, 255, 255, 0.24);
 }
 
 td {
     padding: 5px;
-    border-bottom: 1px solid azure;
+    border-bottom: 1px solid rgba(240, 255, 255, 0.24);
 }
 
-table { 
-    border-collapse: collapse; 
+table {
+    border-collapse: collapse;
+    width: 50%;
 }
 
 
 .gt-background {
-    background-image: url("../images/background-forest.jpg");
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0),
+            rgba(0, 0, 0, 0.795)),
+        url("../images/background-forest.jpg");
     min-height: 100%;
+    overflow: auto;
+
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 .gt-line {
@@ -79,7 +88,7 @@ table {
     text-align: center;
 }
 
-.gt-table-wrapper{
+.gt-table-wrapper {
     margin-top: 50px;
 }
 
@@ -91,6 +100,19 @@ table {
     width: 90%;
 }
 
+.gt-link-button {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(240, 255, 255, 0.24);
+    color: azure;
+
+}
+
+.gt-link-button:hover {
+    background-color: #6361616e
+}
+
+/* ---- */
 .display-center-middle {
     top: 30%;
     left: 50%;
@@ -99,9 +121,11 @@ table {
 }
 
 .display-middle {
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 10%;
+}
+
+.display-center {
+    margin: auto;
 }
 
 .fixed {
