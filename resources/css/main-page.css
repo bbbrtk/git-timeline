@@ -1,19 +1,38 @@
 body,
 h1 {
     font-family: "Raleway", sans-serif;
-    font-c
+    color: azure;
 }
 
-body,
 html {
     height: 100%;
 }
 
 body {
-    background-image: url("../images/background-forest.jpg");
+    height: 100%;
+    width: auto;
+    margin: 0 auto; 
+    border: none; 
+    padding: 0;
 }
 
-.bgimg {
+th {
+    padding: 5px;
+    border-bottom: 1px solid azure;
+}
+
+td {
+    padding: 5px;
+    border-bottom: 1px solid azure;
+}
+
+table { 
+    border-collapse: collapse; 
+}
+
+
+.gt-background {
+    background-image: url("../images/background-forest.jpg");
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -21,18 +40,19 @@ body {
 
 .gt-line {
     margin: auto;
-    width: 40%;
+    /* width: 40%; */
     border-color: #9e9e9e !important
 }
 
 .gt-text {
     font-size: 64px !important;
     color: azure;
+    text-align: center;
 }
 
-.gt-transparent{
+.gt-transparent {
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 
 }
 
@@ -53,12 +73,47 @@ body {
     text-align: center;
 }
 
-.display-middle {
-    position: absolute;
-    top: 50%;
+.gt-table {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.gt-table-wrapper{
+    margin-top: 50px;
+}
+
+.gt-table-left {
+    width: 10%;
+}
+
+.gt-table-right {
+    width: 90%;
+}
+
+.display-center-middle {
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+.display-middle {
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.realtive {
+    position: relative;
 }
 
 /* ::-webkit-input-placeholder {
